@@ -1,5 +1,7 @@
 # Marketplace Material Construccióm
 
+Marketplace construido con Angular, Angular Material y Firebase. Servicio de Google para Logearnos, Storage para almacenar imagenes. Un marketplace para negocios de venta de material para la construccion que buscan publicar sus productos y clientes que buscan comprarlos.
+
 ![Descripción de la imagen](src/app/assets/login_mark.png)
 ![Descripción de la imagen](src/app/assets/reg_mark.png)
 ![Descripción de la imagen](src/app/assets/prod_mark.png)
