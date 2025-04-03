@@ -1,0 +1,21 @@
+<div class="agregar-producto-container">
+    <h2>Agregar Producto</h2>
+    <form [formGroup]="productoForm" (ngSubmit)="agregarProducto()">
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" type="text" formControlName="nombre" required />
+  
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" formControlName="descripcion" required></textarea>
+  
+      <label for="precio">Precio:</label>
+      <input id="precio" type="number" formControlName="precio" required />
+  
+      <!-- <label for="imagen">URL de la Imagen:</label>
+      <input id="imagen" type="text" formControlName="imagen" required /> -->
+
+      <label for="imagen">Seleccionar Imagen:</label>
+      <input id="imagen" type="file" (change)="onFileSelected($event)" accept="image/*" required />
+  
+      <button type="submit" [disabled]="productoForm.invalid">Agregar Producto</button>
+    </form>
+  </div>

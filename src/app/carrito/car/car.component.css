@@ -1,0 +1,41 @@
+.carrito-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .carrito-container h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .producto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .producto h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .producto p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

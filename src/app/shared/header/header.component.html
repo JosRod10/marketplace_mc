@@ -1,0 +1,16 @@
+<header *ngIf="shouldShowHeader()">
+    <!-- Botón para abrir/cerrar el menú -->
+    <button class="menu-button" (click)="toggleMenu()">☰</button>
+  
+    <!-- Menú lateral -->
+    <nav [class.active]="isMenuOpen" class="menu" (mouseleave)="closeMenu()">
+      <a routerLink="/home" (click)="closeMenu()">Home</a>
+      <a *ngIf="tipoUsuario != 'proveedor'" routerLink="/car" (click)="closeMenu()">Carrito</a>
+      <a *ngIf="tipoUsuario === 'proveedor'" routerLink="/agregar" (click)="closeMenu()">Agregar Producto</a>
+      <!-- <a routerLink="/cart" (click)="closeMenu()">Cart</a>
+      <a routerLink="/login" (click)="closeMenu()">Login</a> -->
+      <!-- <a routerLink="/register" (click)="closeMenu()">Register</a> -->
+      <a routerLink="/" (click)="logout()">Cerrar Sesion</a>
+      <!-- <button class="close-menu-button" (click)="toggleMenu()">X</button> -->
+    </nav>
+  </header>

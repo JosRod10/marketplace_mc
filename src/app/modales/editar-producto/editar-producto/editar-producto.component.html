@@ -1,0 +1,16 @@
+<h2>Editar Producto</h2>
+<form (ngSubmit)="editarProducto(data.id)">
+  <label>Nombre:</label>
+  <input [(ngModel)]="data.nombre" type="text" name="nombre" required />
+
+  <label>Descripción:</label>
+  <textarea [(ngModel)]="data.descripcion" name="descripcion" required></textarea>
+
+  <label>Precio:</label>
+  <input [(ngModel)]="data.precio" type="number" name="precio" required />
+
+  <button type="submit">Guardar</button>
+  <button (click)="dialogRef.close()">Cancelar</button>
+</form>
+
+

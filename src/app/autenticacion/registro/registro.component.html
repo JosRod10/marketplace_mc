@@ -1,0 +1,39 @@
+<div class="registro-container">
+  <h2>Registro</h2>
+  <p>Selecciona qué tipo de usuario eres:</p>
+
+  <div class="tipo-usuario">
+    <label class="title-radio">
+      <input type="radio" name="tipoUsuario" value="cliente" [(ngModel)]="tipoUsuario" />
+      Cliente
+    </label>
+    <label class="title-radio">
+      <input type="radio" name="tipoUsuario" value="proveedor" [(ngModel)]="tipoUsuario" />
+      Proveedor
+    </label>
+  </div>
+
+  <div class="tipo-usuario" *ngIf="tipoUsuario === 'proveedor'">
+    <input type="text" placeholder="Escribe el nombre del negocio" [(ngModel)]="nomNegocio">
+  </div>
+
+  <div class="tipo-usuario" *ngIf="tipoUsuario === 'cliente'">
+    <input type="text" placeholder="Agrega una Contraseña" [(ngModel)]="contrasena">
+  </div>
+
+  <div class="tipo-usuario" *ngIf="tipoUsuario === 'proveedor'">
+    <input type="text" placeholder="Agrega una Contraseña" [(ngModel)]="contrasena">
+  </div>
+
+  <p>Regístrate fácilmente con tu cuenta de Google:</p>
+
+  <button class="google-button" (click)="registerWithGoogle()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="google-logo" />
+    Registrarse con Google
+  </button>
+
+  <a routerLink="/login" (click)="direccionarLogin()">¡Login!</a>
+
+</div>
+
+

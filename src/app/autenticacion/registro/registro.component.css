@@ -1,0 +1,168 @@
+/* Contenedor principal del formulario */
+.registro-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título del formulario */
+.registro-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Párrafo de descripción */
+.registro-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el input del nombre del negocio */
+.registro-container input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+/* Cambiar el borde del input al enfocarse */
+.registro-container input[type="text"]:focus {
+  border-color: #66afe9;
+  outline: none; /* Quitar el contorno predeterminado */
+}
+
+/* Botón de Google */
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Logo de Google */
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  color: #252627; /* Color azul para el texto del enlace */
+  font-size: 0.8rem; /* Tamaño de fuente */
+  font-weight: 300; /* Peso de fuente para que sea un poco más destacado */
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+a:hover {
+  color: #0056b3; /* Cambia el color al pasar el mouse */
+  text-decoration: underline; /* Subraya el enlace cuando el mouse pasa sobre él */
+}
+
+a:focus {
+  outline: none; /* Quita el contorno cuando el enlace tiene el foco */
+  text-decoration: underline; /* Añade subrayado al hacer foco */
+}
+
+/* Media Queries para Responsive Design */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .registro-container {
+    padding: 15px;
+  }
+
+  .registro-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .registro-container p {
+    font-size: 0.9rem;
+  }
+
+  .registro-container input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  .google-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .registro-container {
+    max-width: 350px;
+  }
+
+  .registro-container h2 {
+    font-size: 1.9rem;
+  }
+
+  .registro-container p {
+    font-size: 0.95rem;
+  }
+
+  .registro-container input[type="text"] {
+    font-size: 0.95rem;
+  }
+
+  .google-button {
+    font-size: 0.95rem;
+    padding: 9px;
+  }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+  .registro-container {
+    max-width: 400px;
+  }
+
+  .registro-container h2 {
+    font-size: 2rem;
+  }
+
+  .registro-container p {
+    font-size: 1rem;
+  }
+
+  .registro-container input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .google-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+.title-radio {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}

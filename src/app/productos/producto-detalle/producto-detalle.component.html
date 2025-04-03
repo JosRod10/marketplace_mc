@@ -1,0 +1,8 @@
+<div class="product-detail-container">
+    <h2 class="product-name">{{ producto.name }}</h2>
+    <p class="price">{{ producto.price | currency }}</p>
+    <p class="description">{{ producto.description }}</p>
+    <button class="add-to-cart-button" (click)="addToCart(producto)">
+      Agregar al carrito
+    </button>
+  </div>

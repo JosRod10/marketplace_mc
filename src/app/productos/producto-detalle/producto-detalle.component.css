@@ -1,0 +1,124 @@
+/* Contenedor principal del producto */
+.product-detail-container {
+    margin-top: 100px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título del producto */
+  .product-detail-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Precio del producto */
+  .product-detail-container p.price {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Descripción del producto */
+  .product-detail-container p.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Botón "Agregar al carrito" */
+  .product-detail-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-detail-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries para Responsive Design */
+  
+  /* Pantallas pequeñas (móviles) */
+  @media (max-width: 600px) {
+    .product-detail-container {
+      padding: 15px;
+    }
+  
+    .product-detail-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .product-detail-container p.price {
+      font-size: 1.3rem;
+    }
+  
+    .product-detail-container p.description {
+      font-size: 1rem;
+    }
+  
+    .product-detail-container button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Pantallas medianas (tablets) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .product-detail-container {
+      max-width: 90%;
+    }
+  
+    .product-detail-container h2 {
+      font-size: 1.9rem;
+    }
+  
+    .product-detail-container p.price {
+      font-size: 1.4rem;
+    }
+  
+    .product-detail-container p.description {
+      font-size: 1.1rem;
+    }
+  
+    .product-detail-container button {
+      padding: 9px 18px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Pantallas grandes (escritorios) */
+  @media (min-width: 1025px) {
+    .product-detail-container {
+      max-width: 800px;
+    }
+  
+    .product-detail-container h2 {
+      font-size: 2rem;
+    }
+  
+    .product-detail-container p.price {
+      font-size: 1.5rem;
+    }
+  
+    .product-detail-container p.description {
+      font-size: 1.2rem;
+    }
+  
+    .product-detail-container button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }

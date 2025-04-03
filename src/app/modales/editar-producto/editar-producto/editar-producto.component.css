@@ -1,0 +1,100 @@
+/* Contenedor del formulario */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  h2{
+    text-align: center;
+  }
+  
+  /* Estilos para los labels */
+  form label {
+    font-size: 1rem;
+    color: #666;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+  }
+  
+  /* Inputs y textarea */
+  form input, 
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus, 
+  form textarea:focus {
+    border-color: #666;
+  }
+  
+  /* Ajuste del textarea */
+  form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Estilos de los botones */
+  form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Botón guardar */
+  form button:first-of-type {
+    background-color: #17c473;
+    color: white;
+  }
+  
+  form button:first-of-type:hover {
+    background-color: #17c473;
+  }
+  
+  /* Botón cancelar */
+  form button:last-of-type {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  form button:last-of-type:hover {
+    background-color: #b3b3b3;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    form label {
+      font-size: 0.9rem;
+    }
+  
+    form input, form textarea {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    form button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+<div class="home-container">
+    <h1>Bienvenido al Marketplace de Materiales de Construcción</h1>
+    <p>Explora nuestros productos destacados:</p>
+    <!-- <h1>Productos Disponibles</h1> -->
+  
+    <div class="product-list" *ngIf="productos.length > 0; else noProductos">
+      <div *ngFor="let producto of productos" class="product-card">
+        <img [src]="producto.imagenUrl" [alt]="producto.nombre" class="product-image" />
+        <h2>{{ producto.nombre }}</h2>
+        <p>{{ producto.descripcion }}</p>
+        <p class="precio">{{ producto.precio | currency }}</p>
+        <h4>{{ producto.nomNegocio }}</h4>
+        <a *ngIf="this.user?.tipoUsuario != 'proveedor'" (click)="verDetalleProducto(producto.id)" class="btn-details">Agregar al Carrito</a>
+        <a *ngIf="this.user?.tipoUsuario === 'proveedor'" (click)="abrirModalEdicion(producto)" class="btn-details-update">Editar</a>
+        <a *ngIf="this.user?.tipoUsuario === 'proveedor'" (click)="eliminarProducto(producto.id)" class="btn-details-delete">Eliminar</a>
+      </div>
+    </div>
+  
+
+    <ng-template #noProductos>
+      <p>No hay productos disponibles.</p>
+    </ng-template>
+  </div>
